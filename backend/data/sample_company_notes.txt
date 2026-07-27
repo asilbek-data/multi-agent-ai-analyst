@@ -1,0 +1,25 @@
+Company Overview
+
+Our company sells subscription software to small businesses. We track
+customer churn every quarter and review it with the leadership team.
+
+Q1 Churn Notes
+Churn in Q1 was driven mainly by price sensitivity among customers on the
+Starter plan. Several customers mentioned that competitor products offered
+a lower entry price with similar core features.
+
+Q2 Churn Notes
+Churn dropped in Q2 after we introduced an annual billing discount. Support
+response time also improved, which several exit surveys cited as a reason
+customers considered staying but ultimately left for other reasons, such as
+a change in their own business needs.
+
+Q3 Churn Notes
+Q3 churn increased again, concentrated in the Enterprise tier. Feedback
+pointed to missing integrations with popular accounting tools as the
+primary driver. Sales flagged this as a recurring objection during renewal
+conversations.
+
+Product Roadmap Notes
+The engineering team is prioritizing accounting-tool integrations for the
+next release cycle, directly in response to the Q3 churn feedback.

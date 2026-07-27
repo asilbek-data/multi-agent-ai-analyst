@@ -1,0 +1,7 @@
+backend/venv/
+__pycache__/
+*.pyc
+backend/.env
+backend/data/qdrant_local/
+backend/data/company.db
+*.egg-info/
