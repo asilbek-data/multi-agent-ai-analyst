@@ -105,6 +105,13 @@ def supervisor(state: AgentState) -> dict:
         untried = [a for a in fallback_order if not _already_ran(a, steps_so_far)]
         chosen = untried[0] if untried else "finish"
 
+    just_revised = steps_so_far and steps_so_far[-1] == "critic:revise"
+    if chosen == "finish" and just_revised:
+        fallback_order = ["data", "retriever", "code", "web"]
+        untried = [a for a in fallback_order if not _already_ran(a, steps_so_far)]
+        if untried:
+            chosen = untried[0]
+
     return {
         "plan": chosen,
         "steps": steps_so_far + [f"supervisor->{chosen}"],
