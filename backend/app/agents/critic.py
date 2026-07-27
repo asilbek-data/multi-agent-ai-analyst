@@ -20,6 +20,7 @@ def critic(state: AgentState) -> dict:
         "web_result": state.get("web_result"),
         "sql_result": state.get("sql_result"),
         "code_result": state.get("code_result"),
+        "past_turns_from_memory": state.get("memory_context", []),
     }
 
     prompt = (

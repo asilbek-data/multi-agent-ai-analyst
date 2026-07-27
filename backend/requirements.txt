@@ -29,7 +29,7 @@ tavily-python==0.5.0
 ragas==0.2.6
 
 # Observability (F12, added in Phase 5)
-langfuse==2.53.9
+langfuse>=3.0.0
 
 # API server
 fastapi==0.115.5
