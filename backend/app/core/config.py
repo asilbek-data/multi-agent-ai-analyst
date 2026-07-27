@@ -37,7 +37,7 @@ class Settings:
 
     # --- graph safety ---
     MAX_REVISIONS: int = int(os.getenv("MAX_REVISIONS", "2"))
-    RECURSION_LIMIT: int = int(os.getenv("RECURSION_LIMIT", "25"))
+    RECURSION_LIMIT: int = int(os.getenv("RECURSION_LIMIT", "40"))
 
     def validate(self) -> None:
         missing = []

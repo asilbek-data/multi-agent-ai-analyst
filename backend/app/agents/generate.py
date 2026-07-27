@@ -17,8 +17,8 @@ def generate(state: AgentState) -> dict:
         evidence_parts.append("Database query:\n" + state["sql_result"])
     if state.get("code_result"):
         evidence_parts.append("Computation:\n" + state["code_result"])
-    if state.get("critic_reason"):
-        evidence_parts.append(f"Note from a previous review: {state['critic_reason']}")
+    if state.get("memory_context"):
+        evidence_parts.append("Relevant past turns:\n" + "\n---\n".join(state["memory_context"]))
 
     evidence = "\n\n".join(evidence_parts) or "(no evidence gathered)"
 

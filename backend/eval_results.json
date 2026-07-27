@@ -1,0 +1,74 @@
+[
+  {
+    "question": "How many customers churned in Q3?",
+    "expected_agent": "data",
+    "agent_used": "data(sql)",
+    "routed_correctly": true,
+    "answer": "Three customers churned in Q3.",
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "judge_reasoning": "The system's answer accurately reflects the reference answer and is supported by the evidence.",
+    "latency_s": 13.3,
+    "revisions": 0
+  },
+  {
+    "question": "Why did Enterprise customers churn in Q3?",
+    "expected_agent": "retriever",
+    "agent_used": "retriever",
+    "routed_correctly": true,
+    "answer": "Enterprise customers churned in Q3 primarily due to missing integrations with popular accounting tools. This issue was highlighted as a recurring objection during renewal conversations, leading to increased churn in that tier. The engineering team is addressing this feedback by prioritizing accounting-tool integrations for the next release cycle.",
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "judge_reasoning": "The system's answer accurately reflects the reference answer and is fully supported by the provided evidence.",
+    "latency_s": 18.04,
+    "revisions": 0
+  },
+  {
+    "question": "What is 15% of 480?",
+    "expected_agent": "code",
+    "agent_used": "code",
+    "routed_correctly": true,
+    "answer": "15% of 480 is 72.0.",
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "judge_reasoning": "The system's answer correctly calculates 15% of 480 as 72, matching the reference answer.",
+    "latency_s": 4.96,
+    "revisions": 0
+  },
+  {
+    "question": "How many customers churned in Q1?",
+    "expected_agent": "data",
+    "agent_used": "data(sql)",
+    "routed_correctly": true,
+    "answer": "Two customers churned in Q1.",
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "judge_reasoning": "The system's answer accurately reflects the reference answer and is supported by the evidence.",
+    "latency_s": 14.11,
+    "revisions": 0
+  },
+  {
+    "question": "What caused churn to drop in Q2?",
+    "expected_agent": "retriever",
+    "agent_used": "retriever",
+    "routed_correctly": true,
+    "answer": "Churn dropped in Q2 primarily due to the introduction of an annual billing discount. Additionally, improved support response times contributed to customer retention, although some customers still left for reasons related to changes in their own business needs.",
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "judge_reasoning": "The system's answer accurately reflects the reasons for the drop in churn as stated in the reference answer and is supported by the evidence.",
+    "latency_s": 10.88,
+    "revisions": 0
+  },
+  {
+    "question": "If we retain 92% of customers each quarter starting from 200, how many remain after 4 quarters?",
+    "expected_agent": "code",
+    "agent_used": "code",
+    "routed_correctly": true,
+    "answer": "After 4 quarters, 143 customers remain.",
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "judge_reasoning": "The system's answer correctly calculates the number of customers remaining after 4 quarters based on the given retention rate and initial number of customers.",
+    "latency_s": 17.93,
+    "revisions": 0
+  }
+]
