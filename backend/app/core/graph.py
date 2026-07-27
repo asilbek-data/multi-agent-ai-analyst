@@ -66,15 +66,22 @@ def build_graph():
     return g.compile()
 
 
-def run(question: str) -> AgentState:
+def run(question: str, use_memory: bool = True) -> AgentState:
+    from app.core.memory import add_turn, recall
     from app.core.state import new_state
 
+    memory_context = recall(question) if use_memory else []
+
     graph = build_graph()
-    initial_state = new_state(question)
+    initial_state = new_state(question, memory_context=memory_context)
     final_state = graph.invoke(
         initial_state,
         config={"recursion_limit": settings.RECURSION_LIMIT},
     )
+
+    if use_memory and final_state.get("answer"):
+        add_turn(question, final_state["answer"])
+
     return final_state
 
 
